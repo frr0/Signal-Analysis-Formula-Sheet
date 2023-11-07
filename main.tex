@@ -23,6 +23,10 @@
 	\begin{tabular}{lp{8cm} l}
         Trasformata di Fourier:
         $ X(f) = \int_{-\infty}^{\infty} x(t) \cdot e^{-j2\pi ft} \, dt $ \\
+        Periodic signal: 
+        $x(t) = \sum_{n=-\infty}^{\infty} x(t + nT)$\\
+        Inner product:
+        $\langle \mathbf{v}, \mathbf{w} \rangle = \sum_{i=1}^n v_i w_i$\\
         Parseval's Rule:
         $ \int_{-\infty}^{\infty} |x(t)|^2 \, dt = \int_{-\infty}^{\infty} |X(f)|^2 \, df $ \\
         Spettro di potenza:
@@ -98,6 +102,8 @@
         - $j$ represents the imaginary unit ($j^2 = -1$).\\
         - $\omega$ is the angular frequency (measured in radians per second).\\
         - $t$ is time.\\
+
+
 	\end{tabular}
 	
     \end{minipage}
@@ -182,27 +188,6 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%------------ Descrete Time - Chapter 3 ---------------
-\begin{tikzpicture}
-\node [mybox] (box){%
-    \begin{minipage}{0.46\textwidth}
-    
-	\begin{tabular}{lp{8cm} l}
-        Linear:  
-        $y[n] = a_1y_1[n] + a_2y_2[n]$\\
-        Time-invariant:  
-        $y[n] = x[n] * h[n]$\\
-	\end{tabular}
-	
-    \end{minipage}
-};
-%------------ Discrete Time - Chapter 3 HEADER ---------------
-\node[fancytitle, right=10pt] at (box.north west) {Discrete Time - Chapter 3};
-\end{tikzpicture}
-
-
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Trigonometry
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -249,6 +234,12 @@
 \end{tikzpicture}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\begin{figure}
+    \centering
+    \includegraphics[width=0.15\textwidth]{./Screenshot 2023-11-07 234200.png}
+\end{figure}
 
 \end{multicols*}
 \end{document}
