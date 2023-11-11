@@ -1,7 +1,7 @@
 \include{settings}
 \begin{document}
 
-\begin{center}{\huge{\textbf{Signal Analysis Formula Sheet}}}\\
+\begin{center}{\huge{\textbf{Signal and Systems Formula Sheet}}}\\
 \end{center}
 \begin{multicols*}{2}
 
@@ -14,45 +14,48 @@
 %  Continuous Time
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%------------ Continuous Time - Chapter 2-3 ---------------
+%------------ Continuous Time - Chapter 2 ---------------
 \begin{tikzpicture}
 \node [mybox] (box){%
     \begin{minipage}{0.46\textwidth}
     
 	\begin{tabular}{lp{8cm} l}
-        Trasformata di Fourier:
-        $ X(f) = \int_{-\infty}^{\infty} x(t) \cdot e^{-j2\pi ft} \, dt $ \\
-        Periodic signal: 
-        $x(t) = \sum_{n=-\infty}^{\infty} x(t + nT)$\\
-        Inner product:
-        $\langle \mathbf{v}, \mathbf{w} \rangle = \sum_{i=1}^n v_i w_i$\\
-        Parseval's Rule:
-        $ \int_{-\infty}^{\infty} |x(t)|^2 \, dt = \int_{-\infty}^{\infty} |X(f)|^2 \, df $ \\
-        Spettro di potenza:
-        $S_x(f) = |X(f)|^2$\\
-        Valore Medio:
-        $\bar{x} = \lim_{{T \to \infty}} \frac{1}{T} \int_{-T/2}^{T/2} x(t) \, dt$\\
-        Energy of a signal:
-        $E = \int_{-\infty}^{\infty} |x(t)|^2 \, dt$\\
-        Power of a periodic signal:
-        $ P = \lim_{{T \to \infty}} \frac{1}{T} \int_{-T/2}^{T/2} |x(t)|^2 \, dt $ \\
-        Time Average:
-        $\bar{x} = \frac{1}{T2 - T1} \int_{T1}^{T2} x(t) \, dt$\\
-        Instantaneous Power:
-        $P(t_0) = |x(t_0)|^2$\\
-        Scalar Product:
-        $\langle x, y \rangle = \int x(t) \cdot y(t) \, dt$\\
-        Norm:
-        $\|x\| = \sqrt{\int |x(t)|^2 \, dt}$\\
-        Orthogonality:
-        $\langle x, y \rangle = 0$\\
+        Dirac's delta:
+        $ \int_{-\infty}^{\infty} \delta(\tau) \, d\tau = 1 $,
+        $\int_{-\infty}^{\infty} \delta(a[t-t_0]) \, dt = \frac{1}{|a|}S(t_0)$\\
 	\end{tabular}
 	
     \end{minipage}
 };
-%------------ Continuous Time - Chapter 2-3 HEADER ---------------
-\node[fancytitle, right=10pt] at (box.north west) {Countinuous Time - Chapter 2-3};
+%------------ Continuous Time - Chapter 2 HEADER ---------------
+\node[fancytitle, right=10pt] at (box.north west) {Countinuous Time - Chapter 2};
+\end{tikzpicture}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------ Continuous Time - Chapter 3 ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.46\textwidth}
+    
+	\begin{tabular}{lp{8cm} l}
+        Time Average:
+        $\bar{x} = \frac{1}{T2 - T1} \int_{T1}^{T2} x(t) \, dt$\\
+        Energy of a signal:
+        $E = \int_{-\infty}^{\infty} |x(t)|^2 \, dt$\\
+        Spettro di potenza:
+        $S_x(f) = |X(f)|^2$\\
+        Valore Medio:
+        $\bar{x} = \lim_{{T \to \infty}} \frac{1}{T} \int_{-T/2}^{T/2} x(t) \, dt$\\
+        Power of a periodic signal:
+        $ P = \lim_{{T \to \infty}} \frac{1}{T} \int_{-T/2}^{T/2} |x(t)|^2 \, dt $ \\
+	\end{tabular}
+	
+    \end{minipage}
+};
+%------------ Continuous Time - Chapter 3 HEADER ---------------
+\node[fancytitle, right=10pt] at (box.north west) {Countinuous Time - Chapter 3};
 \end{tikzpicture}
 
 
@@ -209,9 +212,9 @@
 
         Identità Trigonometriche Fondamentali:\\
         $\sin^2(\theta) + \cos^2(\theta) = 1$\\
-        $\tan(\theta) = \frac{{\sin(\theta)}}{{\cos(\theta)}}$\\
-        $\sec(\theta) = \frac{1}{{\cos(\theta)}}$\\
-        $\csc(\theta) = \frac{1}{{\sin(\theta)}}$\\
+        $\tan(\theta) = \frac{{\sin(\theta)}}{{\cos(\theta)}}$,
+        $\sec(\theta) = \frac{1}{{\cos(\theta)}}$,
+        $\csc(\theta) = \frac{1}{{\sin(\theta)}}$,
         $\cot(\theta) = \frac{1}{{\tan(\theta)}}$\\
         Seno e Coseno di Somma e Differenza:\\
         $\sin(A + B) = \sin(A)\cos(B) + \cos(A)\sin(B)$\\
@@ -242,11 +245,46 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newpage
-\begin{figure}
-    \centering
-    \includegraphics[width=0.15\textwidth]{./Screenshot 2023-11-07 234200.png}
-\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------ Continuous Time - Chapter 3 ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.46\textwidth}
+    
+	\begin{tabular}{lp{8cm} l}
+        Trasformata di Fourier:
+        $ X(f) = \int_{-\infty}^{\infty} x(t) \cdot e^{-j2\pi ft} \, dt $ \\
+        Periodic signal: 
+        $x(t) = \sum_{n=-\infty}^{\infty} x(t + nT)$\\
+        Inner product:
+        $\langle \mathbf{v}, \mathbf{w} \rangle = \sum_{i=1}^n v_i w_i$\\
+        Parseval's Rule:
+        $ \int_{-\infty}^{\infty} |x(t)|^2 \, dt = \int_{-\infty}^{\infty} |X(f)|^2 \, df $ \\
+        Spettro di potenza:
+        $S_x(f) = |X(f)|^2$\\
+        Valore Medio:
+        $\bar{x} = \lim_{{T \to \infty}} \frac{1}{T} \int_{-T/2}^{T/2} x(t) \, dt$\\
+        Energy of a signal:
+        $E = \int_{-\infty}^{\infty} |x(t)|^2 \, dt$\\
+        Power of a periodic signal:
+        $ P = \lim_{{T \to \infty}} \frac{1}{T} \int_{-T/2}^{T/2} |x(t)|^2 \, dt $ \\
+        Time Average:
+        $\bar{x} = \frac{1}{T2 - T1} \int_{T1}^{T2} x(t) \, dt$\\
+        Instantaneous Power:
+        $P(t_0) = |x(t_0)|^2$\\
+        Scalar Product:
+        $\langle x, y \rangle = \int x(t) \cdot y(t) \, dt$\\
+        Norm:
+        $\|x\| = \sqrt{\int |x(t)|^2 \, dt}$\\
+        Orthogonality:
+        $\langle x, y \rangle = 0$\\
+	\end{tabular}
+	
+    \end{minipage}
+};
+%------------ Continuous Time - Chapter 3 HEADER ---------------
+\node[fancytitle, right=10pt] at (box.north west) {Countinuous Time - Chapter 3};
+\end{tikzpicture}
 
 \end{multicols*}
 \end{document}
