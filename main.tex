@@ -24,7 +24,7 @@
 	\begin{tabular}{lp{8cm} l}
         Dirac's delta:
         $ \int_{-\infty}^{\infty} \delta(\tau) \, d\tau = 1 $,
-        $\int_{-\infty}^{\infty} \delta(a[t-t_0]) \, dt = \frac{1}{|a|}S(t_0)$\\
+        $\int_{-\infty}^{\infty} \delta(a[t-t_0]) \, dt = \frac{1}{|a|}S(t_0)$,\\
         $\int_{-\infty}^{\infty} f(t) \delta(t - a) \, dt = f(a)$\\
 	\end{tabular}
 	
@@ -43,14 +43,14 @@
 	\begin{tabular}{lp{8cm} l}
         Time Average:
         $\bar{x} = \frac{1}{T2 - T1} \int_{T1}^{T2} x(t) \, dt$\\
+        Instantaneous Power: 
+        $p(t) = |x(t)|^2$\\
+        Average Power (Periodic Signal): 
+        $ P = \lim_{{T \to \infty}} \frac{1}{T} \int_{-T/2}^{T/2} |x(t)|^2 \, dt$ $= E/T$\\
         Energy of a signal:
         $E = \int_{-\infty}^{\infty} |x(t)|^2 \, dt$\\
-        Spettro di potenza:
-        $S_x(f) = |X(f)|^2$\\
-        Valore Medio:
-        $\bar{x} = \lim_{{T \to \infty}} \frac{1}{T} \int_{-T/2}^{T/2} x(t) \, dt$\\
-        Power of a periodic signal:
-        $ P = \lim_{{T \to \infty}} \frac{1}{T} \int_{-T/2}^{T/2} |x(t)|^2 \, dt $ \\
+        Periodic signal: 
+        $x(t) = \sum_{n=-\infty}^{\infty} x(t + nT)$\\
 	\end{tabular}
 	
     \end{minipage}
@@ -68,25 +68,27 @@
     \begin{minipage}{0.46\textwidth}
     
 	\begin{tabular}{lp{8cm} l}
-        Schwarz's Inequality (Cauchy-Schwarz Inequality):\\
-        For vectors u and v in an inner product space, it states:\\
-        $|\langle u, v \rangle|^2 \leq \langle u, u \rangle \cdot \langle v, v \rangle$\\
 
-        Orthonormal Set:\\
-        An orthonormal set ${u_i}$ is a set of vectors in an inner product space such that:\\
-        $\langle u_i, u_j \rangle = \delta_{ij}$\\
-
-        Orthonormal Basis:\\
-        An orthonormal basis is a set of vectors that is both orthonormal and forms a\\
-        basis for the vector space. If ${u_i}$ is an orthonormal basis, then for any \\
-        vector v in the space:\\
-        $v = \sum_{i} \langle v, u_i \rangle \cdot u_i$\\
-
-        Gram-Schmidt: \\
-
-        Canonical bases:\\
-        $x(t) \approx x_0(t) = \sum_{n=-\infty}^{\infty} x(n\Delta t) \Pi_{\Delta t}(t - n\Delta t)$ \\
-
+        Norm:
+        $\|x\| = \sqrt{\int |x(t)|^2 \, dt}$\\
+        Distance: 
+        $\|\mathbf{v}\| = \sqrt{\langle \mathbf{v}, \mathbf{v} \rangle}$\\
+        Inner Product:
+        $\langle f, g \rangle = \int_{a}^{b} f(x) \overline{g(x)} \, dx$\\
+        Orthogonality:
+        $ \langle \mathbf{u}, \mathbf{v} \rangle = 0 $\\
+        Signal distance:
+        $d = \sqrt{\sum_i (x_i - y_i)^2} $\\
+        Parseval's Rule:
+        $ \int_{-\infty}^{\infty} |x(t)|^2 \, dt = \int_{-\infty}^{\infty} |X(f)|^2 \, df $ \\
+        Schwarz's Inequality:
+        $| \langle \mathbf{u}, \mathbf{v} \rangle | \leq \| \mathbf{u} \| \cdot \| \mathbf{v} \|$\\
+        Projection of a Vector onto an Orthonormal Set:\\
+        $\mathbf{v}_{\text{proj}} = \langle \mathbf{v}, \mathbf{u}_1 \rangle \mathbf{u}_1 + \langle \mathbf{v}, \mathbf{u}_2 \rangle \mathbf{u}_2 + \ldots + \langle \mathbf{v}, \mathbf{u}_n \rangle \mathbf{u}_n$\\
+        Approximation: 
+        $ \mathbf{v}_{\text{approx}} = \sum_{i=1}^n \langle \mathbf{v}, \mathbf{u}_i \rangle \mathbf{u}_i$\\
+        Error:
+        $ \mathbf{v}_{\text{error}} = \mathbf{v} - \mathbf{v}_{\text{approx}}$\\
 
 	\end{tabular}
 	
@@ -105,6 +107,8 @@
     \begin{minipage}{0.46\textwidth}
     
 	\begin{tabular}{lp{8cm} l}
+        Fourier Series:
+        $ c_n = \frac{1}{T} \int_{0}^{T} f(t) e^{-i\frac{2\pi n t}{T}} \, dt$\\
         Fourier Basis:  
         $e^{j\omega t}$\\
 
@@ -123,7 +127,7 @@
 \node[fancytitle, right=10pt] at (box.north west) {Countinuous Time - Chapter 5};
 \end{tikzpicture}
 
-\newcolumn
+% \newcolumn
 
 
 
@@ -131,6 +135,7 @@
 %  Discrete Time
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcolumn
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %------------ Discrete Time - Chapter 1 ---------------
@@ -177,6 +182,7 @@
 \end{tikzpicture}
 
 
+% \newcolumn
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %------------ Descrete Time - Chapter 2 ---------------
@@ -197,6 +203,8 @@
 \node[fancytitle, right=10pt] at (box.north west) {Discrete Time - Chapter 2};
 \end{tikzpicture}
 
+\iffalse
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Trigonometry
@@ -246,6 +254,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% \newpage
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %------------ Continuous Time - Chapter 3 ---------------
 \begin{tikzpicture}
@@ -259,8 +269,6 @@
         $x(t) = \sum_{n=-\infty}^{\infty} x(t + nT)$\\
         Inner product:
         $\langle \mathbf{v}, \mathbf{w} \rangle = \sum_{i=1}^n v_i w_i$\\
-        Parseval's Rule:
-        $ \int_{-\infty}^{\infty} |x(t)|^2 \, dt = \int_{-\infty}^{\infty} |X(f)|^2 \, df $ \\
         Spettro di potenza:
         $S_x(f) = |X(f)|^2$\\
         Valore Medio:
@@ -286,6 +294,48 @@
 %------------ Continuous Time - Chapter 3 HEADER ---------------
 \node[fancytitle, right=10pt] at (box.north west) {Countinuous Time - Chapter 3};
 \end{tikzpicture}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------ Continuous Time - Chapter 4 ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.46\textwidth}
+    
+	\begin{tabular}{lp{8cm} l}
+        Parseval's Rule:
+        $ \int_{-\infty}^{\infty} |x(t)|^2 \, dt = \int_{-\infty}^{\infty} |X(f)|^2 \, df $ \\
+        Schwarz's Inequality:
+         $| \langle \mathbf{u}, \mathbf{v} \rangle | \leq \| \mathbf{u} \| \cdot \| \mathbf{v} \|$\\
+        For vectors u and v in an inner product space, it states:\\
+        $|\langle u, v \rangle|^2 \leq \langle u, u \rangle \cdot \langle v, v \rangle$\\
+
+        Orthonormal Set:\\
+        An orthonormal set ${u_i}$ is a set of vectors in an inner product space such that:\\
+        $\langle u_i, u_j \rangle = \delta_{ij}$\\
+
+        Orthonormal Basis:\\
+        An orthonormal basis is a set of vectors that is both orthonormal and forms a\\
+        basis for the vector space. If ${u_i}$ is an orthonormal basis, then for any \\
+        vector v in the space:\\
+        $v = \sum_{i} \langle v, u_i \rangle \cdot u_i$\\
+
+        Gram-Schmidt: \\
+
+        Canonical bases:\\
+        $x(t) \approx x_0(t) = \sum_{n=-\infty}^{\infty} x(n\Delta t) \Pi_{\Delta t}(t - n\Delta t)$ \\
+
+
+	\end{tabular}
+	
+    \end{minipage}
+};
+%------------ Continuous Time - Chapter 4 HEADER ---------------
+\node[fancytitle, right=10pt] at (box.north west) {Countinuous Time - Chapter 4};
+\end{tikzpicture}
+
+\fi
+
 
 \end{multicols*}
 \end{document}
