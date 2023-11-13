@@ -25,7 +25,11 @@
         Dirac's delta:
         $ \int_{-\infty}^{\infty} \delta(\tau) \, d\tau = 1 $,
         $\int_{-\infty}^{\infty} \delta(a[t-t_0]) \, dt = \frac{1}{|a|}S(t_0)$,\\
+        $\int_{-\infty}^{\infty} x(t) \delta(t) \, dt = x(0) $,
         $\int_{-\infty}^{\infty} f(t) \delta(t - a) \, dt = f(a)$\\
+        $x(t) * \delta(t - t_0) = x(t_0) \delta(t - t_0)$,
+        $x(t) * \delta(t) = x(t) $,
+        $x(t) * \delta(t - \theta) = x(t - \theta) $\\
 	\end{tabular}
 	
     \end{minipage}
@@ -112,11 +116,11 @@
         Fourier Basis:  
         $e^{j\omega t}$\\
 
-        Where:\\
-        - $e$ is the base of the natural logarithm (approximately 2.71828).\\
-        - $j$ represents the imaginary unit ($j^2 = -1$).\\
-        - $\omega$ is the angular frequency (measured in radians per second).\\
-        - $t$ is time.\\
+        % Where:\\
+        % - $e$ is the base of the natural logarithm (approximately 2.71828).\\
+        % - $j$ represents the imaginary unit ($j^2 = -1$).\\
+        % - $\omega$ is the angular frequency (measured in radians per second).\\
+        % - $t$ is time.\\
 
 
 	\end{tabular}
