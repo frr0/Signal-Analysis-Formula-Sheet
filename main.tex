@@ -131,15 +131,206 @@
 \node[fancytitle, right=10pt] at (box.north west) {Countinuous Time - Chapter 5};
 \end{tikzpicture}
 
+\newcolumn
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------ Continuous Time - Chapter 6 ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.46\textwidth}
+    
+	\begin{tabular}{lp{8cm} l}
+
+
+ Continuous Fourier Transform (CFT):
+ $ X(f) = \int_{-\infty}^{\infty} x(t) \cdot e^{-j2\pi ft} \, dt $ \\
+
+ Inverse Continuous Fourier Transform:
+ $ x(t) = \int_{-\infty}^{\infty} X(f) \cdot e^{j2\pi ft} \, df $ \\
+
+ Discrete Fourier Transform (DFT):
+ $ X(k) = \sum_{n=0}^{N-1} x(n) \cdot e^{-j\frac{2\pi}{N}kn} $ \\
+
+ Inverse Discrete Fourier Transform (IDFT):
+ $ x(n) = \frac{1}{N} \sum_{k=0}^{N-1} X(k) \cdot e^{j\frac{2\pi}{N}kn} $ \\
+
+ Fourier Transform Pairs:
+ $ X(f) \rightleftharpoons x(t) $ -
+ $ X(k) \rightleftharpoons x(n) $ \\
+
+ Frequency Shift Property:
+ $ \mathcal{F}\{x(t)e^{j2\pi f_0 t}\} = X(f-f_0) $ \\
+
+ Time Scaling (or Compression) Property:
+ $ \mathcal{F}\{x(at)\} = \frac{1}{|a|}X\left(\frac{f}{a}\right) $ \\
+
+ Time Shifting Property:
+ $ \mathcal{F}\{x(t - t_0)\} = X(f) \cdot e^{-j2\pi f t_0} $ \\
+
+ Convolution Theorem:
+ $ \mathcal{F}\{x(t) * h(t)\} = X(f) \cdot H(f) $ \\
+
+ Parseval's Theorem:
+ $ \int_{-\infty}^{\infty} |x(t)|^2 \, dt = \frac{1}{2\pi} \int_{-\infty}^{\infty} |X(f)|^2 \, df $ \\
+
+
+
+	\end{tabular}
+	
+    \end{minipage}
+};
+%------------ Continuous Time - Chapter 6 HEADER ---------------
+\node[fancytitle, right=10pt] at (box.north west) {Countinuous Time - Chapter 6};
+\end{tikzpicture}
+
 % \newcolumn
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------ Continuous Time - Chapter 7 ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.46\textwidth}
+    
+	\begin{tabular}{lp{8cm} l}
+        Fourier Series:
+        $ c_n = \frac{1}{T} \int_{0}^{T} f(t) e^{-i\frac{2\pi n t}{T}} \, dt$\\
+        Fourier Basis:  
+        $e^{j\omega t}$\\
+
+        % Where:\\
+        % - $e$ is the base of the natural logarithm (approximately 2.71828).\\
+        % - $j$ represents the imaginary unit ($j^2 = -1$).\\
+        % - $\omega$ is the angular frequency (measured in radians per second).\\
+        % - $t$ is time.\\
+
+
+	\end{tabular}
+	
+    \end{minipage}
+};
+%------------ Continuous Time - Chapter 7 HEADER ---------------
+\node[fancytitle, right=10pt] at (box.north west) {Countinuous Time - Chapter 7};
+\end{tikzpicture}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------ Continuous Time - Chapter 8 ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.46\textwidth}
+    
+	\begin{tabular}{lp{8cm} l}
+        Fourier Series:
+        $ c_n = \frac{1}{T} \int_{0}^{T} f(t) e^{-i\frac{2\pi n t}{T}} \, dt$\\
+        Fourier Basis:  
+        $e^{j\omega t}$\\
+
+        % Where:\\
+        % - $e$ is the base of the natural logarithm (approximately 2.71828).\\
+        % - $j$ represents the imaginary unit ($j^2 = -1$).\\
+        % - $\omega$ is the angular frequency (measured in radians per second).\\
+        % - $t$ is time.\\
+
+
+	\end{tabular}
+	
+    \end{minipage}
+};
+%------------ Continuous Time - Chapter 8 HEADER ---------------
+\node[fancytitle, right=10pt] at (box.north west) {Countinuous Time - Chapter 8};
+\end{tikzpicture}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------ Continuous Time - Chapter 9 ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.46\textwidth}
+    
+	\begin{tabular}{lp{8cm} l}
+        Fourier Series:
+        $ c_n = \frac{1}{T} \int_{0}^{T} f(t) e^{-i\frac{2\pi n t}{T}} \, dt$\\
+        Fourier Basis:  
+        $e^{j\omega t}$\\
+
+        % Where:\\
+        % - $e$ is the base of the natural logarithm (approximately 2.71828).\\
+        % - $j$ represents the imaginary unit ($j^2 = -1$).\\
+        % - $\omega$ is the angular frequency (measured in radians per second).\\
+        % - $t$ is time.\\
+
+
+	\end{tabular}
+	
+    \end{minipage}
+};
+%------------ Continuous Time - Chapter 9 HEADER ---------------
+\node[fancytitle, right=10pt] at (box.north west) {Countinuous Time - Chapter 9};
+\end{tikzpicture}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------ Continuous Time - Chapter 10 ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.46\textwidth}
+    
+	\begin{tabular}{lp{8cm} l}
+        Fourier Series:
+        $ c_n = \frac{1}{T} \int_{0}^{T} f(t) e^{-i\frac{2\pi n t}{T}} \, dt$\\
+        Fourier Basis:  
+        $e^{j\omega t}$\\
+
+        % Where:\\
+        % - $e$ is the base of the natural logarithm (approximately 2.71828).\\
+        % - $j$ represents the imaginary unit ($j^2 = -1$).\\
+        % - $\omega$ is the angular frequency (measured in radians per second).\\
+        % - $t$ is time.\\
+
+
+	\end{tabular}
+	
+    \end{minipage}
+};
+%------------ Continuous Time - Chapter 10 HEADER ---------------
+\node[fancytitle, right=10pt] at (box.north west) {Countinuous Time - Chapter 10};
+\end{tikzpicture}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------ Continuous Time - Chapter 11 ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.46\textwidth}
+    
+	\begin{tabular}{lp{8cm} l}
+        Fourier Series:
+        $ c_n = \frac{1}{T} \int_{0}^{T} f(t) e^{-i\frac{2\pi n t}{T}} \, dt$\\
+        Fourier Basis:  
+        $e^{j\omega t}$\\
+
+        % Where:\\
+        % - $e$ is the base of the natural logarithm (approximately 2.71828).\\
+        % - $j$ represents the imaginary unit ($j^2 = -1$).\\
+        % - $\omega$ is the angular frequency (measured in radians per second).\\
+        % - $t$ is time.\\
+
+
+	\end{tabular}
+	
+    \end{minipage}
+};
+%------------ Continuous Time - Chapter 11 HEADER ---------------
+\node[fancytitle, right=10pt] at (box.north west) {Countinuous Time - Chapter 11};
+\end{tikzpicture}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Discrete Time
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcolumn
+% \newcolumn
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %------------ Discrete Time - Chapter 1 ---------------
@@ -206,6 +397,64 @@
 %------------ Discrete Time - Chapter 2 HEADER ---------------
 \node[fancytitle, right=10pt] at (box.north west) {Discrete Time - Chapter 2};
 \end{tikzpicture}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------ Discrete Time - Chapter 3 ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.46\textwidth}
+    
+	\begin{tabular}{lp{8cm} l}
+        Fourier Series:
+        $ c_n = \frac{1}{T} \int_{0}^{T} f(t) e^{-i\frac{2\pi n t}{T}} \, dt$\\
+        Fourier Basis:  
+        $e^{j\omega t}$\\
+
+        % Where:\\
+        % - $e$ is the base of the natural logarithm (approximately 2.71828).\\
+        % - $j$ represents the imaginary unit ($j^2 = -1$).\\
+        % - $\omega$ is the angular frequency (measured in radians per second).\\
+        % - $t$ is time.\\
+
+
+	\end{tabular}
+	
+    \end{minipage}
+};
+%------------ Discrete Time - Chapter 3 HEADER ---------------
+\node[fancytitle, right=10pt] at (box.north west) {Discrete Time - Chapter 3};
+\end{tikzpicture}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------ Discrete Time - Chapter 4 ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.46\textwidth}
+    
+	\begin{tabular}{lp{8cm} l}
+        Fourier Series:
+        $ c_n = \frac{1}{T} \int_{0}^{T} f(t) e^{-i\frac{2\pi n t}{T}} \, dt$\\
+        Fourier Basis:  
+        $e^{j\omega t}$\\
+
+        % Where:\\
+        % - $e$ is the base of the natural logarithm (approximately 2.71828).\\
+        % - $j$ represents the imaginary unit ($j^2 = -1$).\\
+        % - $\omega$ is the angular frequency (measured in radians per second).\\
+        % - $t$ is time.\\
+
+
+	\end{tabular}
+	
+    \end{minipage}
+};
+%------------ Discrete Time - Chapter 4 HEADER ---------------
+\node[fancytitle, right=10pt] at (box.north west) {Discrete Time - Chapter 4};
+\end{tikzpicture}
+
 
 \iffalse
 \newpage
